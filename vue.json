@@ -1,0 +1,25 @@
+{
+	"vue template": {
+		"prefix": "tmpl",
+		"body": [
+			"<template>\r",
+			"  <div class=\"${1:app}\">\r",
+			"      $3\r",
+			"  </div>\r",
+			"</template>\r",
+			"\r",
+			"<script>\r",
+			"export default {\r",
+			"\r",
+			"}\r",
+			"</script>\r",
+			"\r",
+			"<style lang=\"less\">\r",
+			".$1{\r",
+			"    $2\r",
+			"}\r",
+			"</style>"
+		],
+		"description": "Creates a vue template"
+	}
+}

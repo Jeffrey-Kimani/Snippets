@@ -1,0 +1,11 @@
+{
+	"router-link": {
+		"prefix": "router-link",
+		"body": [
+			"<router-link :to=\"{name: '${1:TasksAdmin}'}\">\r",
+			"    $2\r",
+			"</router-link>"
+		],
+		"description": "Creates a link to a vue router component"
+	}
+}

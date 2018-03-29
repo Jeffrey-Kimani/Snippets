@@ -1,0 +1,69 @@
+{
+	"vue": {
+		"prefix": "vue",
+		"body": [
+			"var ${1:app} = new Vue({\r",
+			"    el: '${2:#app}',\r",
+			"    data: {\r",
+			"        message: '${3:Hello Vue!}'\r",
+			"    }\r",
+			"});"
+		],
+		"description": "Creates a new vue instance"
+	},
+	"axios": {
+		"prefix": "axios",
+		"body": [
+			"axios.${1:get}('${2:/user?ID=12345}')\r",
+			"    .then(function (response) {\r",
+			"        ${3:console.log(response);}\r",
+			"    })\r",
+			"    .catch(function (error) {\r",
+			"        ${4:console.log(error);}\r",
+			"    });"
+		],
+		"description": "Ceates a way to communicate with the backend"
+	},
+	"vue methods Long": {
+		"prefix": "vu-methods",
+		"body": [
+			"methods: {\r",
+			"    ${1:setToken}: function($2){\r",
+			"        $3\r",
+			"    },\r",
+			"}"
+		],
+		"description": "Creates a method tag for vue"
+	},
+	"Vue Method": {
+		"prefix": "v-method",
+		"body": [
+			"${1:setToken}: function($2){\r",
+			"    $3\r",
+			"},"
+		],
+		"description": "Creates a method inside a vue methods tag"
+	},
+	"Vue Data": {
+		"prefix": "v-data",
+		"body": [
+			"data(){\r",
+			"    return{\r",
+			"        $1\r",
+			"    }\r",
+			"},"
+		],
+		"description": "Creates a data container to hold all vue data properties"
+	},
+	"Vue Methods": {
+		"prefix": "v-methods",
+		"body": [
+			"methods:{\r",
+			"    ${1:setToken}($2){\r",
+			"        $3\r",
+			"    },\r",
+			"},"
+		],
+		"description": "Creates a vue method container to hold vue methods"
+	}
+}
